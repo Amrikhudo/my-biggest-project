@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Prompt&family=Source+Sans+Pro:wght@700&display=swap");
+h1 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h2{
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h3{
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h4{
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+p{
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+div{
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+ul{
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+li{
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+pre{
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a{
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+:root {
+  --dl-color-gray-500: #595959;
+  --dl-color-gray-700: #999;
+  --dl-color-gray-900: #d9d9d9;
+  --dl-size-size-large: 144px;
+  --dl-size-size-small: 48px;
+  --dl-color-danger-300: #a22020;
+  --dl-color-danger-500: #bf2626;
+  --dl-color-danger-700: #e14747;
+  --dl-color-gray-black: #000;
+  --dl-color-gray-white: #fff;
+  --dl-size-size-medium: 96px;
+  --dl-size-size-xlarge: 192px;
+  --dl-size-size-xsmall: 16px;
+  --dl-space-space-unit: 16px;
+  --dl-color-primary-100: #003eb3;
+  --dl-color-primary-300: #0074f0;
+  --dl-color-primary-500: #14a9ff;
+  --dl-color-primary-700: #85dcff;
+  --dl-color-success-300: #199033;
+  --dl-color-success-500: #32a94c;
+  --dl-color-success-700: #4cc366;
+  --dl-size-size-xxlarge: 288px;
+  --dl-size-size-maxwidth: 1400px;
+  --dl-radius-radius-round: 50%;
+  --dl-space-space-halfunit: 8px;
+  --dl-space-space-sixunits: 96px;
+  --dl-space-space-twounits: 32px;
+  --dl-radius-radius-radius2: 2px;
+  --dl-radius-radius-radius4: 4px;
+  --dl-radius-radius-radius8: 8px;
+  --dl-space-space-fiveunits: 80px;
+  --dl-space-space-fourunits: 64px;
+  --dl-space-space-threeunits: 48px;
+  --dl-space-space-oneandhalfunits: 24px;
+}
+.button {
+  display: inline-block;
+}
+.button,
+.input {
+  color: var(--dl-color-gray-black);
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.input,
+.textarea {
+  cursor: auto;
+}
+.textarea {
+  color: var(--dl-color-gray-black);
+  padding: 0.5rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.list {
+  width: 100%;
+  margin: 1em 0;
+  display: block;
+  padding: 0 0 0 1.5rem;
+  list-style-type: none;
+  list-style-position: outside;
+}
+.list-item {
+  display: list-item;
+}
+.teleport-show {
+  display: flex !important;
+  transform: none !important;
+}
+.bg-primary {
+  background: linear-gradient(270deg, #bed41a, #bed41a 49.91%, #bed41a);
+}
+.color-secondary {
+  background: #000;
+}
+.header {
+  font-size: 45px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.header,
+.sub-heading {
+  text-align: center;
+}
+.sub-heading {
+  color: #fff;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 30px;
+}
+.btn-primary {
+  color: #000;
+  border: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: var(--dl-space-space-unit) var(--dl-space-space-threeunits);
+  background-color: #bed41a;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: var(--dl-space-space-fiveunits);
+  max-width: var(--dl-size-size-maxwidth);
+}
+.bg-secondary {
+  background: #000;
+}
+.box {
+  border: 1px solid #53437e;
+  border-radius: 15px;
+}
+.f-size-18 {
+  font-size: 18px;
+}
+.f-16 {
+  font-size: 16px;
+}
+.active {
+  height: auto;
+}
+.circ {
+  position: absolute;
+}
+.discord-logo {
+  width: 200px;
+  position: relative;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.forms {
+  color: #fff;
+  padding: 15px 5px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #3f3075;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+}
+.Content {
+  font-size: 16px;
+  font-weight: 400;
+}
+.Content,
+.Heading {
+  font-family: Inter;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+.Heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .discord-logo {
+    width: 232px;
+    height: 226px;
+  }
+}
+@media (max-width: 479px) {
+  .header {
+    font-size: 32px;
+  }
+  .sub-heading {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,4598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title class="jsx-1af492b05e0c7c16">Goozlemania</title>
+    <meta
+      property="og:title"
+      content="Goozlemania"
+      class="jsx-1af492b05e0c7c16"
+    />
+    <meta name="next-head-count" content="4" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="vk:card" content="summary_large_image" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<style data-tag="reset-style-sheet">
+      html {
+        line-height: 1.15;
+      }
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+      }
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      figure,
+      blockquote,
+      figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        background-color: transparent;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+      }
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      input {
+        padding: 2px 4px;
+      }
+      img {
+        display: block;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+      }
+    </style>
+    <link rel="shortcut icon" href="logo.png" type="icon/png" sizes="32x32" />
+    <noscript></noscript>
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <style>
+      div[data-style="box-gradient"]:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 15px;
+        padding: 4px;
+        background: linear-gradient(266.06deg, #bed41a 0.96%, #bed41a 97.54%);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box,
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+      }
+
+      div[data-object="faq"] h3:before {
+        content: "+";
+        width: 40px;
+        height: 40px;
+        background: radial-gradient(
+          50% 50% at 50% 50%,
+          #bed41a 0%,
+          #bed41a 92.19%
+        );
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        color: #000;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+        cursor: pointer;
+        font-weight: 400;
+      }
+
+      ::placeholder {
+        color: #fff;
+      }
+      div[data-object="faq"].active h3:before {
+        content: "-";
+      }
+      h2[data-faq="content"] {
+        height: 0;
+        overflow: hidden;
+      }
+
+      div[data-object="faq"].active h2[data-faq="content"] {
+        height: auto;
+        margin-bottom: 32px;
+      }
+      #modal-form {
+        position: fixed;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(49 49 49 / 70%);
+        display: none;
+      }
+
+      @media (max-width: 479px) {
+        div[data-object="faq"] h3:before {
+          right: 10px;
+        }
+      }
+
+      .discord-logo {
+        position: relative;
+        width: 220px;
+        height: 220px;
+      }
+      #circ {
+        position: absolute;
+        font-size: 2vmin;
+        font-family: "cousine", monospace;
+        text-transform: uppercase;
+        animation: spin 14s linear infinite;
+        color: #bebbbc;
+        top: 12%;
+        left: 50%;
+      }
+      @keyframes spin {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <noscript></noscript>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="style.css" as="style" />
+    <link rel="stylesheet" href="style2.css" data-n-g="" />
+    <noscript data-n-css=""></noscript>
+    <script defer="" nomodule="" src="script.js"></script>
+    <script src="script2.js" defer=""></script>
+    <script src="script3.js" defer=""></script>
+    <script src="62be57948b11b758n.js" defer=""></script>
+    <script src="23e854a7b5b991e4.js" defer=""></script>
+    <script src="60d4c3a3ed4c5d33.js" defer=""></script>
+    <script src="c2aec1cb39530d82.js" defer=""></script>
+    <script src="buildManifest.js" defer=""></script>
+    <script src="ssgManifest.js" defer=""></script>
+    <style id="__jsx-4c7cc500ded58631">
+      .navigation-links-nav.jsx-4c7cc500ded58631 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -moz-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+      }
+      .navigation-links-button.jsx-4c7cc500ded58631 {
+        color: #fff;
+        border: 1px solid#7775fc;
+        background: transparent;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        padding-top: var(--dl-space-space-unit);
+        padding-left: var(--dl-space-space-twounits);
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        padding-right: var(--dl-space-space-twounits);
+        padding-bottom: var(--dl-space-space-unit);
+        text-transform: uppercase;
+      }
+      .navigation-links-button.jsx-4c7cc500ded58631:hover {
+        border: unset;
+        background-color: #bed41a;
+      }
+      .navigation-links-container.jsx-4c7cc500ded58631 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+      }
+      .navigation-links-link.jsx-4c7cc500ded58631 {
+        display: contents;
+      }
+      .navigation-links-image.jsx-4c7cc500ded58631 {
+        width: 24px;
+        height: 24px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        margin-left: var(--dl-space-space-twounits);
+        text-decoration: none;
+      }
+      .navigation-links-link1.jsx-4c7cc500ded58631 {
+        display: contents;
+      }
+      .navigation-links-icon.jsx-4c7cc500ded58631 {
+        fill: #000;
+        width: 24px;
+        height: 24px;
+        display: inline;
+        margin-left: var(--dl-space-space-twounits);
+        text-decoration: none;
+      }
+      @media (max-width: 767px) {
+        .navigation-links-nav.jsx-4c7cc500ded58631 {
+          -webkit-box-align: start;
+          -webkit-align-items: flex-start;
+          -moz-box-align: start;
+          -ms-flex-align: start;
+          align-items: flex-start;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+          -moz-box-orient: vertical;
+          -moz-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+        }
+        .navigation-links-button.jsx-4c7cc500ded58631 {
+          margin-bottom: var(--dl-space-space-halfunit);
+        }
+        .navigation-links-image.jsx-4c7cc500ded58631 {
+          margin-left: 0px;
+          margin-right: var(--dl-space-space-oneandhalfunits);
+        }
+        .navigation-links-icon.jsx-4c7cc500ded58631 {
+          margin-left: 0px;
+        }
+      }
+    </style>
+    <style id="__jsx-fee9217df28f3aa8">
+      .header-header.jsx-fee9217df28f3aa8 {
+        width: 100%;
+        height: auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        z-index: 9999;
+        position: fixed;
+        max-width: var(--dl-size-size-maxwidth);
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: var(--dl-space-space-halfunit);
+        padding-left: var(--dl-space-space-threeunits);
+        border-bottom: 2px solid#808080;
+        padding-right: var(--dl-space-space-threeunits);
+        padding-bottom: var(--dl-space-space-halfunit);
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+      }
+      .header-nav.jsx-fee9217df28f3aa8 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -moz-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+      }
+      .header-link.jsx-fee9217df28f3aa8 {
+        display: contents;
+      }
+      .header-component.jsx-fee9217df28f3aa8 {
+        text-decoration: none;
+      }
+      .header-burger-menu.jsx-fee9217df28f3aa8 {
+        display: none;
+      }
+      .header-icon.jsx-fee9217df28f3aa8 {
+        width: var(--dl-size-size-small);
+        height: var(--dl-size-size-small);
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+      .header-mobile-menu.jsx-fee9217df28f3aa8 {
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100vh;
+        display: none;
+        padding: 32px;
+        z-index: 100;
+        position: absolute;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        background-color: #bed41a;
+      }
+      .header-nav1.jsx-fee9217df28f3aa8 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .header-container.jsx-fee9217df28f3aa8 {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: var(--dl-space-space-threeunits);
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+      }
+      .header-close-mobile-menu.jsx-fee9217df28f3aa8 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+      .header-icon2.jsx-fee9217df28f3aa8 {
+        width: var(--dl-size-size-xsmall);
+        height: var(--dl-size-size-xsmall);
+      }
+      .header-root-class-name.jsx-fee9217df28f3aa8 {
+        max-width: 100%;
+      }
+      @media (max-width: 767px) {
+        .header-header.jsx-fee9217df28f3aa8 {
+          padding-left: var(--dl-space-space-twounits);
+          padding-right: var(--dl-space-space-twounits);
+        }
+        .header-nav.jsx-fee9217df28f3aa8 {
+          display: none;
+        }
+        .header-burger-menu.jsx-fee9217df28f3aa8 {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -moz-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -moz-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+        }
+        .header-icon.jsx-fee9217df28f3aa8 {
+          fill: #fff;
+        }
+        .header-icon2.jsx-fee9217df28f3aa8 {
+          fill: #d9d9d9;
+          width: var(--dl-size-size-small);
+          height: var(--dl-size-size-xsmall);
+        }
+      }
+      @media (max-width: 479px) {
+        .header-header.jsx-fee9217df28f3aa8 {
+          padding: var(--dl-space-space-unit);
+        }
+        .header-mobile-menu.jsx-fee9217df28f3aa8 {
+          padding: 16px;
+        }
+        .header-icon2.jsx-fee9217df28f3aa8 {
+          height: var(--dl-size-size-small);
+        }
+      }
+    </style>
+    <style id="__jsx-2850cd51fdf0e0bb">
+      .card-image-card.jsx-2850cd51fdf0e0bb {
+        width: auto;
+        height: auto;
+        position: relative;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+      }
+      .card-image-i-m-g.jsx-2850cd51fdf0e0bb {
+        border: 15px;
+      }
+      .card-image-image.jsx-2850cd51fdf0e0bb {
+        width: 100%;
+        height: 100%;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+      }
+      .card-image-root-class-name.jsx-2850cd51fdf0e0bb {
+        width: 100%;
+        height: auto;
+      }
+      .card-image-root-class-name1.jsx-2850cd51fdf0e0bb {
+        width: 100%;
+        height: auto;
+      }
+      .card-image-root-class-name2.jsx-2850cd51fdf0e0bb {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+    <style id="__jsx-b592e430067c6df5">
+      .card-card.jsx-b592e430067c6df5 {
+        width: 300px;
+        border: 1px solid#53437e;
+        height: auto;
+        position: relative;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+      }
+      .card-i-m-g.jsx-b592e430067c6df5 {
+        border: 15px 15px 0px 0px;
+      }
+      .card-image.jsx-b592e430067c6df5 {
+        width: 100%;
+        -webkit-border-radius: 15px 15px 0px 0px;
+        -moz-border-radius: 15px 15px 0px 0px;
+        border-radius: 15px 15px 0px 0px;
+      }
+      .card-container.jsx-b592e430067c6df5 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -moz-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 100%;
+        height: 100px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+      .card-text.jsx-b592e430067c6df5 {
+        color: #fff;
+        font-size: 24px;
+        text-align: center;
+        font-family: Inter;
+        font-weight: 600;
+        line-height: 29.05px;
+        text-transform: none;
+        text-decoration: none;
+      }
+      .card-icon.jsx-b592e430067c6df5 {
+        fill: #808080;
+        width: 24px;
+        height: 24px;
+        display: inline;
+        margin-left: var(--dl-space-space-twounits);
+      }
+      .card-root-class-name3.jsx-b592e430067c6df5 {
+        width: 100%;
+      }
+      .card-root-class-name4.jsx-b592e430067c6df5 {
+        width: 100%;
+      }
+      .card-root-class-name5.jsx-b592e430067c6df5 {
+        width: 100%;
+      }
+      .card-root-class-name6.jsx-b592e430067c6df5 {
+        width: 100%;
+      }
+      .card-root-class-name7.jsx-b592e430067c6df5 {
+        width: 100%;
+      }
+      .card-root-class-name8.jsx-b592e430067c6df5 {
+        width: 100%;
+      }
+      @media (max-width: 1200px) {
+        .card-container.jsx-b592e430067c6df5 {
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -moz-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -moz-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+        }
+      }
+      @media (max-width: 767px) {
+        .card-icon.jsx-b592e430067c6df5 {
+          margin-left: 0px;
+        }
+      }
+    </style>
+    <style id="__jsx-f9e3a1a5542a56c">
+      .footer-footer.jsx-f9e3a1a5542a56c {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: var(--dl-space-space-halfunit);
+        padding-left: var(--dl-space-space-threeunits);
+        padding-right: var(--dl-space-space-threeunits);
+        padding-bottom: var(--dl-space-space-halfunit);
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        background: linear-gradient(
+          270deg,
+          #bed41a 0%,
+          #bed41a 49.91%,
+          #bed41a 100%
+        );
+      }
+      .footer-link.jsx-f9e3a1a5542a56c {
+        display: contents;
+      }
+      .footer-text.jsx-f9e3a1a5542a56c {
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        text-decoration: none;
+      }
+      .footer-text2.jsx-f9e3a1a5542a56c {
+        text-decoration: underline;
+      }
+      .footer-icon-group.jsx-f9e3a1a5542a56c {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+      }
+      .footer-text4.jsx-f9e3a1a5542a56c {
+        color: #fff;
+        font-size: 18px;
+        text-decoration: underline;
+      }
+      .footer-container.jsx-f9e3a1a5542a56c {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+      }
+      .footer-link1.jsx-f9e3a1a5542a56c {
+        display: contents;
+      }
+      .footer-image1.jsx-f9e3a1a5542a56c {
+        width: 24px;
+        height: 24px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        margin-left: var(--dl-space-space-twounits);
+        text-decoration: none;
+      }
+      .footer-link2.jsx-f9e3a1a5542a56c {
+        display: contents;
+      }
+      .footer-icon.jsx-f9e3a1a5542a56c {
+        fill: #000;
+        width: 24px;
+        height: 24px;
+        margin-left: var(--dl-space-space-twounits);
+        text-decoration: none;
+      }
+      @media (max-width: 767px) {
+        .footer-footer.jsx-f9e3a1a5542a56c {
+          padding-left: var(--dl-space-space-twounits);
+          padding-right: var(--dl-space-space-twounits);
+        }
+        .footer-text4.jsx-f9e3a1a5542a56c {
+          text-align: center;
+          margin-left: var(--dl-space-space-unit);
+          margin-right: var(--dl-space-space-unit);
+        }
+      }
+      @media (max-width: 479px) {
+        .footer-footer.jsx-f9e3a1a5542a56c {
+          padding: var(--dl-space-space-unit);
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+          -moz-box-orient: vertical;
+          -moz-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+        }
+        .footer-image.jsx-f9e3a1a5542a56c {
+          margin-bottom: var(--dl-space-space-unit);
+        }
+        .footer-icon-group.jsx-f9e3a1a5542a56c {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-flow: column;
+          -moz-box-orient: vertical;
+          -moz-box-direction: normal;
+          -ms-flex-flow: column;
+          flex-flow: column;
+        }
+        .footer-text4.jsx-f9e3a1a5542a56c {
+          margin-left: 0px;
+          margin-right: 0px;
+          margin-bottom: var(--dl-space-space-unit);
+        }
+        .footer-image1.jsx-f9e3a1a5542a56c {
+          margin-left: 0px;
+        }
+      }
+    </style>
+    <style id="__jsx-1af492b05e0c7c16">
+      .home-container.jsx-1af492b05e0c7c16 {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: auto;
+        background: -webkit-linear-gradient(
+          right,
+          #008080 0%,
+          #2c1e5e 49.91%,
+          #008080 100%
+        );
+        background: -moz-linear-gradient(
+          right,
+          #008080 0%,
+          #2c1e5e 49.91%,
+          #008080 100%
+        );
+        background: -o-linear-gradient(
+          right,
+          #008080 0%,
+          #2c1e5e 49.91%,
+          #008080 100%
+        );
+        background: linear-gradient(
+          270deg,
+          #000 0%,
+          #000 49.91%,
+          #000 100%
+        );
+        min-height: 100vh;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        font-family: Poppins;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -moz-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+      }
+      .home-hero.jsx-1af492b05e0c7c16 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -moz-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 100%;
+        height: 100vh;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-image: url("/playground_assets/herobg-1500h.jpg");
+        background-repeat: no-repeat;
+      }
+      .home-overlay.jsx-1af492b05e0c7c16 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(19, 10, 51, 0.75);
+      }
+      .home-container01.jsx-1af492b05e0c7c16 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -moz-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        margin: auto;
+        position: relative;
+        max-width: var(--dl-size-size-maxwidth);
+        text-align: center;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .home-text.jsx-1af492b05e0c7c16 {
+        color: rgb(255, 255, 255);
+        font-family: Inter;
+      }
+      .home-sub.jsx-1af492b05e0c7c16 {
+        margin-top: auto;
+        font-family: Poppins;
+        font-weight: 400;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: var(--dl-space-space-twounits);
+      }
+      .home-link.jsx-1af492b05e0c7c16 {
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        text-decoration: none;
+      }
+      .home-link.jsx-1af492b05e0c7c16:hover {
+        border: 1px solid#7775fc;
+        background-color: transparent;
+      }
+      .home-t-h-e-n-f-t.jsx-1af492b05e0c7c16 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -moz-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+      }
+      .home-header.jsx-1af492b05e0c7c16 {
+        margin-bottom: var(--dl-space-space-threeunits);
+      }
+      .home-text08.jsx-1af492b05e0c7c16 {
+        color: rgb(255, 255, 255);
+        font-family: Inter;
+      }
+      .home-sub1.jsx-1af492b05e0c7c16 {
+        margin-top: auto;
+        font-family: Poppins;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: var(--dl-space-space-twounits);
+      }
+      .home-images.jsx-1af492b05e0c7c16 {
+        gap: var(--dl-space-space-threeunits);
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -moz-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: var(--dl-space-space-threeunits);
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+      .home-c-o-l.jsx-1af492b05e0c7c16 {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 0px;
+        -moz-box-flex: 1;
+        -ms-flex: 1 1 0px;
+        flex: 1 1 0px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        margin-bottom: var(--dl-space-space-oneandhalfunits);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .home-c-o-l01.jsx-1af492b05e0c7c16 {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 0px;
+        -moz-box-flex: 1;
+        -ms-flex: 1 1 0px;
+        flex: 1 1 0px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        margin-bottom: var(--dl-space-space-oneandhalfunits);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .home-c-o-l02.jsx-1af492b05e0c7c16 {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 0px;
+        -moz-box-flex: 1;
+        -ms-flex: 1 1 0px;
+        flex: 1 1 0px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        margin-bottom: var(--dl-space-space-oneandhalfunits);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .home-box.jsx-1af492b05e0c7c16 {
+        padding: var(--dl-space-space-threeunits);
+        position: relative;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+      }
+      .home-text13.jsx-1af492b05e0c7c16 {
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: 600;
+        line-height: 40px;
+      }
+      .home-container04.jsx-1af492b05e0c7c16 {
+        gap: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+      .home-c-o-l03.jsx-1af492b05e0c7c16 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: var(--dl-space-space-twounits);
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .home-text17.jsx-1af492b05e0c7c16 {
+        font-style: normal;
+        margin-bottom: var(--dl-space-space-twounits);
+      }
+      .home-c-o-l04.jsx-1af492b05e0c7c16 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: var(--dl-space-space-twounits);
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        border-left: 1px solid#bed41a;
+        border-right: 1px solid#bed41a;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .home-text18.jsx-1af492b05e0c7c16 {
+        font-style: normal;
+        margin-bottom: var(--dl-space-space-twounits);
+      }
+      .home-c-o-l05.jsx-1af492b05e0c7c16 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: var(--dl-space-space-twounits);
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .home-text19.jsx-1af492b05e0c7c16 {
+        font-style: normal;
+        margin-bottom: var(--dl-space-space-twounits);
+      }
+      .home-graduates.jsx-1af492b05e0c7c16 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -moz-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+      }
+      .home-header1.jsx-1af492b05e0c7c16 {
+        margin-bottom: var(--dl-space-space-threeunits);
+      }
+      .home-text20.jsx-1af492b05e0c7c16 {
+        color: rgb(255, 255, 255);
+        font-family: Inter;
+      }
+      .home-c-o-l06.jsx-1af492b05e0c7c16 {
+        gap: var(--dl-space-space-threeunits);
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -moz-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: row;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: normal;
+        -ms-flex-flow: row;
+        flex-flow: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: var(--dl-space-space-threeunits);
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+      }
+      .home-b-o-x1.jsx-1af492b05e0c7c16 {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 0px;
+        -moz-box-flex: 1;
+        -ms-flex: 1 1 0px;
+        flex: 1 1 0px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: var(--dl-space-space-threeunits);
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .home-text21.jsx-1af492b05e0c7c16 {
+        font-style: normal;
+        margin-bottom: var(--dl-space-space-twounits);
+      }
+      .home-text22.jsx-1af492b05e0c7c16 {
+        color: #000;
+        font-size: 16px;
+      }
+      .home-text29.jsx-1af492b05e0c7c16 {
+        color: #000;
+        font-size: 16px;
+      }
+      .home-button.jsx-1af492b05e0c7c16 {
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+      }
+      .home-button.jsx-1af492b05e0c7c16:hover {
+        border: 1px solid#7775fc;
+        background: transparent;
+      }
+      .home-b-o-x2.jsx-1af492b05e0c7c16 {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 0px;
+        -moz-box-flex: 1;
+        -ms-flex: 1 1 0px;
+        flex: 1 1 0px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .home-image.jsx-1af492b05e0c7c16 {
+        width: 100%;
+        border: 1px solid#53437e;
+        height: 100%;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+      }
+      .home-image1.jsx-1af492b05e0c7c16 {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+      }
+      .home-roadmap.jsx-1af492b05e0c7c16 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -moz-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+      }
+      .home-header2.jsx-1af492b05e0c7c16 {
+        margin-bottom: var(--dl-space-space-threeunits);
+      }
+      .home-text36.jsx-1af492b05e0c7c16 {
+        color: rgb(255, 255, 255);
+        font-family: Inter;
+      }
+      .home-sub2.jsx-1af492b05e0c7c16 {
+        margin-top: auto;
+        font-family: Poppins;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: var(--dl-space-space-twounits);
+      }
+      .home-b-o-x3.jsx-1af492b05e0c7c16 {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 0px;
+        -moz-box-flex: 1;
+        -ms-flex: 1 1 0px;
+        flex: 1 1 0px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        margin-bottom: var(--dl-space-space-threeunits);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .home-image2.jsx-1af492b05e0c7c16 {
+        width: 100%;
+        border: 1px solid#53437e;
+        height: 100%;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+      }
+      .home-image3.jsx-1af492b05e0c7c16 {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+      }
+      .home-text41.jsx-1af492b05e0c7c16 {
+        color: rgb(255, 255, 255);
+        font-family: Inter;
+      }
+      .home-sub3.jsx-1af492b05e0c7c16 {
+        margin-top: auto;
+        font-family: Poppins;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: var(--dl-space-space-twounits);
+      }
+      .home-image4.jsx-1af492b05e0c7c16 {
+        margin: auto;
+        display: none;
+        -o-object-fit: cover;
+        object-fit: cover;
+        text-decoration: none;
+      }
+      .home-container09.jsx-1af492b05e0c7c16 {
+        width: 150px;
+        cursor: pointer;
+        height: 150px;
+        margin: auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        background: -webkit-radial-gradient(
+          50%50%,
+          50%50%,
+          #7775fc 0%,
+          #6639e4 92.19%
+        );
+        background: -moz-radial-gradient(
+          50%50%,
+          50%50%,
+          #7775fc 0%,
+          #6639e4 92.19%
+        );
+        background: -o-radial-gradient(
+          50%50%,
+          50%50%,
+          #7775fc 0%,
+          #6639e4 92.19%
+        );
+        background: radial-gradient(
+          50%50%at 50%50%,
+          #7775fc 0%,
+          #6639e4 92.19%
+        );
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-decoration: none;
+      }
+      .home-image5.jsx-1af492b05e0c7c16 {
+        width: 60px;
+        height: 60px;
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+      .home-div.jsx-1af492b05e0c7c16 {
+        position: absolute;
+      }
+      .home-faculty.jsx-1af492b05e0c7c16 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -moz-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+      }
+      .home-header3.jsx-1af492b05e0c7c16 {
+        margin-bottom: var(--dl-space-space-threeunits);
+      }
+      .home-text42.jsx-1af492b05e0c7c16 {
+        color: rgb(255, 255, 255);
+        font-family: Inter;
+        margin-bottom: var(--dl-space-space-fiveunits);
+      }
+      .home-images1.jsx-1af492b05e0c7c16 {
+        gap: var(--dl-space-space-threeunits);
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -moz-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: var(--dl-space-space-threeunits);
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+      .home-c-o-l07.jsx-1af492b05e0c7c16 {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 0px;
+        -moz-box-flex: 1;
+        -ms-flex: 1 1 0px;
+        flex: 1 1 0px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        margin-bottom: var(--dl-space-space-oneandhalfunits);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .home-link3.jsx-1af492b05e0c7c16 {
+        display: contents;
+      }
+      .home-component4.jsx-1af492b05e0c7c16 {
+        text-decoration: none;
+      }
+      .home-c-o-l08.jsx-1af492b05e0c7c16 {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 0px;
+        -moz-box-flex: 1;
+        -ms-flex: 1 1 0px;
+        flex: 1 1 0px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        margin-bottom: var(--dl-space-space-oneandhalfunits);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .home-link4.jsx-1af492b05e0c7c16 {
+        display: contents;
+      }
+      .home-component5.jsx-1af492b05e0c7c16 {
+        text-decoration: none;
+      }
+      .home-c-o-l09.jsx-1af492b05e0c7c16 {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 0px;
+        -moz-box-flex: 1;
+        -ms-flex: 1 1 0px;
+        flex: 1 1 0px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        margin-bottom: var(--dl-space-space-oneandhalfunits);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .home-link5.jsx-1af492b05e0c7c16 {
+        display: contents;
+      }
+      .home-component6.jsx-1af492b05e0c7c16 {
+        text-decoration: none;
+      }
+      .home-f-a-qs.jsx-1af492b05e0c7c16 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -moz-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+      }
+      .home-header4.jsx-1af492b05e0c7c16 {
+        margin-bottom: var(--dl-space-space-threeunits);
+      }
+      .home-text43.jsx-1af492b05e0c7c16 {
+        color: rgb(255, 255, 255);
+        font-family: Inter;
+        margin-bottom: var(--dl-space-space-fiveunits);
+      }
+      .home-box4.jsx-1af492b05e0c7c16 {
+        padding: var(--dl-space-space-fourunits);
+        position: relative;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+      }
+      .home-f-a-q-1.jsx-1af492b05e0c7c16 {
+        gap: var(--dl-space-space-twounits);
+        position: relative;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        margin-top: 0px;
+        justify-self: flex-start;
+        border-bottom: 1px solid#3f3075;
+        margin-bottom: var(--dl-space-space-twounits);
+      }
+      .home-text46.jsx-1af492b05e0c7c16 {
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-size: 26px;
+        text-align: left;
+        font-family: Inter;
+        font-weight: 600;
+        margin-right: var(--dl-space-space-threeunits);
+        margin-bottom: var(--dl-space-space-twounits);
+      }
+      .home-content.jsx-1af492b05e0c7c16 {
+        width: 100%;
+        margin: auto;
+        text-align: left;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        font-family: Poppins;
+        font-weight: 400;
+        text-transform: none;
+      }
+      .home-f-a-q-2.jsx-1af492b05e0c7c16 {
+        gap: var(--dl-space-space-twounits);
+        position: relative;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        justify-self: flex-start;
+        border-bottom: 1px solid#3f3075;
+        margin-bottom: var(--dl-space-space-threeunits);
+      }
+      .home-text49.jsx-1af492b05e0c7c16 {
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-size: 26px;
+        text-align: left;
+        font-family: Inter;
+        font-weight: 600;
+        margin-right: var(--dl-space-space-threeunits);
+        margin-bottom: var(--dl-space-space-twounits);
+      }
+      .home-content1.jsx-1af492b05e0c7c16 {
+        width: 100%;
+        margin-top: auto;
+        text-align: left;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        font-family: Poppins;
+        font-weight: 400;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: none;
+      }
+      .home-f-a-q-3.jsx-1af492b05e0c7c16 {
+        gap: var(--dl-space-space-twounits);
+        position: relative;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        justify-self: flex-start;
+        border-bottom: 1px solid#3f3075;
+        margin-bottom: var(--dl-space-space-threeunits);
+      }
+      .home-text54.jsx-1af492b05e0c7c16 {
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-size: 26px;
+        text-align: left;
+        font-family: Inter;
+        font-weight: 600;
+        margin-right: var(--dl-space-space-threeunits);
+        margin-bottom: var(--dl-space-space-twounits);
+      }
+      .home-content2.jsx-1af492b05e0c7c16 {
+        width: 100%;
+        margin-top: auto;
+        text-align: left;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        font-family: Poppins;
+        font-weight: 400;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: none;
+      }
+      .home-f-a-q-4.jsx-1af492b05e0c7c16 {
+        gap: var(--dl-space-space-twounits);
+        position: relative;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        justify-self: flex-start;
+        border-bottom: 1px solid#3f3075;
+        margin-bottom: var(--dl-space-space-threeunits);
+      }
+      .home-text62.jsx-1af492b05e0c7c16 {
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-size: 26px;
+        text-align: left;
+        font-family: Inter;
+        font-weight: 600;
+        margin-right: var(--dl-space-space-threeunits);
+        margin-bottom: var(--dl-space-space-twounits);
+      }
+      .home-content3.jsx-1af492b05e0c7c16 {
+        width: 100%;
+        margin-top: auto;
+        text-align: left;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        font-family: Poppins;
+        font-weight: 400;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: none;
+      }
+      .home-f-a-q-5.jsx-1af492b05e0c7c16 {
+        gap: var(--dl-space-space-twounits);
+        position: relative;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        justify-self: flex-start;
+        border-bottom: 1px solid#3f3075;
+        margin-bottom: var(--dl-space-space-threeunits);
+      }
+      .home-text67.jsx-1af492b05e0c7c16 {
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-size: 26px;
+        text-align: left;
+        font-family: Inter;
+        font-weight: 600;
+        margin-right: var(--dl-space-space-threeunits);
+        margin-bottom: var(--dl-space-space-twounits);
+      }
+      .home-content4.jsx-1af492b05e0c7c16 {
+        width: 100%;
+        margin-top: auto;
+        text-align: left;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        font-family: Poppins;
+        font-weight: 400;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: none;
+      }
+      .home-f-a-q-6.jsx-1af492b05e0c7c16 {
+        gap: var(--dl-space-space-twounits);
+        position: relative;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        justify-self: flex-start;
+        border-bottom: 1px solid#3f3075;
+        margin-bottom: var(--dl-space-space-threeunits);
+      }
+      .home-text70.jsx-1af492b05e0c7c16 {
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-size: 26px;
+        text-align: left;
+        font-family: Inter;
+        font-weight: 600;
+        margin-right: var(--dl-space-space-threeunits);
+        margin-bottom: var(--dl-space-space-twounits);
+      }
+      .home-content5.jsx-1af492b05e0c7c16 {
+        width: 100%;
+        margin-top: auto;
+        text-align: left;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        font-family: Poppins;
+        font-weight: 400;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: none;
+      }
+      .home-f-a-q-7.jsx-1af492b05e0c7c16 {
+        gap: var(--dl-space-space-twounits);
+        position: relative;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        justify-self: flex-start;
+        border-bottom: 1px solid#3f3075;
+        margin-bottom: var(--dl-space-space-threeunits);
+      }
+      .home-text78.jsx-1af492b05e0c7c16 {
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-size: 26px;
+        text-align: left;
+        font-family: Inter;
+        font-weight: 600;
+        margin-right: var(--dl-space-space-threeunits);
+        margin-bottom: var(--dl-space-space-twounits);
+      }
+      .home-content6.jsx-1af492b05e0c7c16 {
+        width: 100%;
+        margin-top: auto;
+        text-align: left;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        font-family: Poppins;
+        font-weight: 400;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: none;
+      }
+      .home-f-a-q-71.jsx-1af492b05e0c7c16 {
+        gap: var(--dl-space-space-twounits);
+        position: relative;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        justify-self: flex-start;
+        border-bottom: 1px solid#3f3075;
+        margin-bottom: var(--dl-space-space-threeunits);
+      }
+      .home-text87.jsx-1af492b05e0c7c16 {
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-size: 26px;
+        text-align: left;
+        font-family: Inter;
+        font-weight: 600;
+        margin-right: var(--dl-space-space-threeunits);
+        margin-bottom: var(--dl-space-space-twounits);
+      }
+      .home-content7.jsx-1af492b05e0c7c16 {
+        width: 100%;
+        margin-top: auto;
+        text-align: left;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        font-family: Poppins;
+        font-weight: 400;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: none;
+      }
+      .home-forms.jsx-1af492b05e0c7c16 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -moz-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        z-index: 99999;
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+      }
+      .home-container12.jsx-1af492b05e0c7c16 {
+        max-width: 100%;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .home-box5.jsx-1af492b05e0c7c16 {
+        margin: auto;
+        padding: var(--dl-space-space-threeunits);
+        z-index: 99999;
+        position: relative;
+        max-width: 500px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        background-color: #0f0535;
+      }
+      .home-text92.jsx-1af492b05e0c7c16 {
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: 600;
+        line-height: 40px;
+      }
+      .home-icon.jsx-1af492b05e0c7c16 {
+        top: 15px;
+        fill: #fff;
+        right: 15px;
+        width: 24px;
+        cursor: pointer;
+        height: 24px;
+        position: absolute;
+      }
+      .home-forms1.jsx-1af492b05e0c7c16 {
+        gap: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+      .home-form.jsx-1af492b05e0c7c16 {
+        width: 100%;
+        height: auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        z-index: 999;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+      .home-textinput.jsx-1af492b05e0c7c16 {
+        width: 100%;
+      }
+      .home-textinput1.jsx-1af492b05e0c7c16 {
+        width: 100%;
+      }
+      .home-textinput2.jsx-1af492b05e0c7c16 {
+        width: 100%;
+      }
+      .home-textarea.jsx-1af492b05e0c7c16 {
+        width: 100%;
+      }
+      .home-button1.jsx-1af492b05e0c7c16 {
+        width: 205px;
+        text-align: center;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+      }
+      .home-button1.jsx-1af492b05e0c7c16:hover {
+        border: 1px solid#7775fc;
+        background: transparent;
+      }
+      @media (max-width: 1200px) {
+        .home-text.jsx-1af492b05e0c7c16 {
+          color: rgb(255, 255, 255);
+          font-family: Inter;
+        }
+        .home-sub.jsx-1af492b05e0c7c16 {
+          font-family: Poppins;
+        }
+        .home-sub1.jsx-1af492b05e0c7c16 {
+          font-family: Poppins;
+        }
+        .home-text20.jsx-1af492b05e0c7c16 {
+          color: rgb(255, 255, 255);
+          font-family: Inter;
+        }
+        .home-content.jsx-1af492b05e0c7c16 {
+          font-family: Poppins;
+          font-weight: 400;
+          text-transform: none;
+        }
+        .home-content1.jsx-1af492b05e0c7c16 {
+          font-family: Poppins;
+          font-weight: 400;
+          text-transform: none;
+        }
+        .home-content2.jsx-1af492b05e0c7c16 {
+          font-family: Poppins;
+          font-weight: 400;
+          text-transform: none;
+        }
+        .home-content3.jsx-1af492b05e0c7c16 {
+          font-family: Poppins;
+          font-weight: 400;
+          text-transform: none;
+        }
+        .home-content4.jsx-1af492b05e0c7c16 {
+          font-family: Poppins;
+          font-weight: 400;
+          text-transform: none;
+        }
+        .home-content5.jsx-1af492b05e0c7c16 {
+          font-family: Poppins;
+          font-weight: 400;
+          text-transform: none;
+        }
+        .home-text78.jsx-1af492b05e0c7c16 {
+          color: rgb(255, 255, 255);
+          font-size: 26px;
+          font-family: Inter;
+          font-weight: 600;
+        }
+        .home-content6.jsx-1af492b05e0c7c16 {
+          font-family: Poppins;
+          font-weight: 400;
+          text-transform: none;
+        }
+      }
+      @media (max-width: 991px) {
+        .home-container02.jsx-1af492b05e0c7c16 {
+          padding-top: var(--dl-space-space-twounits);
+          padding-left: var(--dl-space-space-twounits);
+          padding-right: var(--dl-space-space-twounits);
+          padding-bottom: var(--dl-space-space-twounits);
+        }
+        .home-c-o-l.jsx-1af492b05e0c7c16 {
+          margin-bottom: var(--dl-space-space-oneandhalfunits);
+        }
+        .home-c-o-l01.jsx-1af492b05e0c7c16 {
+          margin-bottom: var(--dl-space-space-oneandhalfunits);
+        }
+        .home-c-o-l02.jsx-1af492b05e0c7c16 {
+          margin-bottom: var(--dl-space-space-oneandhalfunits);
+        }
+        .home-c-o-l03.jsx-1af492b05e0c7c16 {
+          padding-top: var(--dl-space-space-oneandhalfunits);
+          padding-left: 0px;
+          padding-right: 0px;
+          padding-bottom: var(--dl-space-space-oneandhalfunits);
+        }
+        .home-c-o-l04.jsx-1af492b05e0c7c16 {
+          padding-top: var(--dl-space-space-twounits);
+          padding-left: var(--dl-space-space-halfunit);
+          padding-right: var(--dl-space-space-twounits);
+          padding-bottom: var(--dl-space-space-twounits);
+        }
+        .home-c-o-l05.jsx-1af492b05e0c7c16 {
+          padding-top: var(--dl-space-space-oneandhalfunits);
+          padding-left: 0px;
+          padding-right: 0px;
+          padding-bottom: var(--dl-space-space-oneandhalfunits);
+        }
+        .home-container05.jsx-1af492b05e0c7c16 {
+          padding: var(--dl-space-space-twounits);
+        }
+        .home-container06.jsx-1af492b05e0c7c16 {
+          padding: var(--dl-space-space-twounits);
+        }
+        .home-container10.jsx-1af492b05e0c7c16 {
+          padding: var(--dl-space-space-twounits);
+        }
+        .home-container11.jsx-1af492b05e0c7c16 {
+          padding: var(--dl-space-space-twounits);
+        }
+      }
+      @media (max-width: 767px) {
+        .home-images.jsx-1af492b05e0c7c16 {
+          gap: var(--dl-space-space-oneandhalfunits);
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-flow: column;
+          -moz-box-orient: vertical;
+          -moz-box-direction: normal;
+          -ms-flex-flow: column;
+          flex-flow: column;
+        }
+        .home-box.jsx-1af492b05e0c7c16 {
+          padding: var(--dl-space-space-oneandhalfunits);
+        }
+        .home-container04.jsx-1af492b05e0c7c16 {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-flow: column;
+          -moz-box-orient: vertical;
+          -moz-box-direction: normal;
+          -ms-flex-flow: column;
+          flex-flow: column;
+        }
+        .home-c-o-l03.jsx-1af492b05e0c7c16 {
+          padding-top: 0px;
+          padding-bottom: 0px;
+        }
+        .home-text17.jsx-1af492b05e0c7c16 {
+          margin-bottom: var(--dl-space-space-oneandhalfunits);
+        }
+        .home-c-o-l04.jsx-1af492b05e0c7c16 {
+          border: unset;
+          padding-top: 0px;
+          padding-bottom: 0px;
+        }
+        .home-text18.jsx-1af492b05e0c7c16 {
+          margin-bottom: var(--dl-space-space-oneandhalfunits);
+        }
+        .home-c-o-l05.jsx-1af492b05e0c7c16 {
+          padding-top: 0px;
+          padding-bottom: 0px;
+        }
+        .home-text19.jsx-1af492b05e0c7c16 {
+          margin-bottom: var(--dl-space-space-oneandhalfunits);
+        }
+        .home-c-o-l06.jsx-1af492b05e0c7c16 {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-flow: column;
+          -moz-box-orient: vertical;
+          -moz-box-direction: normal;
+          -ms-flex-flow: column;
+          flex-flow: column;
+        }
+        .home-images1.jsx-1af492b05e0c7c16 {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-flow: column;
+          -moz-box-orient: vertical;
+          -moz-box-direction: normal;
+          -ms-flex-flow: column;
+          flex-flow: column;
+        }
+        .home-box5.jsx-1af492b05e0c7c16 {
+          padding: var(--dl-space-space-oneandhalfunits);
+        }
+        .home-forms1.jsx-1af492b05e0c7c16 {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-flow: column;
+          -moz-box-orient: vertical;
+          -moz-box-direction: normal;
+          -ms-flex-flow: column;
+          flex-flow: column;
+        }
+      }
+      @media (max-width: 479px) {
+        .home-container01.jsx-1af492b05e0c7c16 {
+          max-width: 100%;
+        }
+        .home-image4.jsx-1af492b05e0c7c16 {
+          display: none;
+        }
+        .home-container11.jsx-1af492b05e0c7c16 {
+          padding: var(--dl-space-space-halfunit);
+        }
+        .home-box4.jsx-1af492b05e0c7c16 {
+          margin-left: 0px;
+          padding-top: var(--dl-space-space-twounits);
+          margin-right: 0px;
+          padding-left: var(--dl-space-space-unit);
+          padding-right: var(--dl-space-space-unit);
+          padding-bottom: var(--dl-space-space-twounits);
+        }
+        .home-f-a-q-1.jsx-1af492b05e0c7c16 {
+          position: inherit;
+        }
+        .home-text46.jsx-1af492b05e0c7c16 {
+          font-size: 22px;
+        }
+        .home-f-a-q-2.jsx-1af492b05e0c7c16 {
+          position: inherit;
+        }
+        .home-text49.jsx-1af492b05e0c7c16 {
+          font-size: 22px;
+        }
+        .home-f-a-q-3.jsx-1af492b05e0c7c16 {
+          position: inherit;
+        }
+        .home-text54.jsx-1af492b05e0c7c16 {
+          font-size: 22px;
+        }
+        .home-f-a-q-4.jsx-1af492b05e0c7c16 {
+          position: inherit;
+        }
+        .home-text62.jsx-1af492b05e0c7c16 {
+          font-size: 22px;
+        }
+        .home-f-a-q-5.jsx-1af492b05e0c7c16 {
+          position: inherit;
+        }
+        .home-text67.jsx-1af492b05e0c7c16 {
+          font-size: 22px;
+        }
+        .home-f-a-q-6.jsx-1af492b05e0c7c16 {
+          position: inherit;
+        }
+        .home-text70.jsx-1af492b05e0c7c16 {
+          font-size: 22px;
+        }
+        .home-f-a-q-7.jsx-1af492b05e0c7c16 {
+          position: inherit;
+        }
+        .home-text78.jsx-1af492b05e0c7c16 {
+          font-size: 22px;
+        }
+        .home-f-a-q-71.jsx-1af492b05e0c7c16 {
+          position: inherit;
+        }
+        .home-text87.jsx-1af492b05e0c7c16 {
+          font-size: 22px;
+        }
+        .home-container12.jsx-1af492b05e0c7c16 {
+          padding-left: var(--dl-space-space-twounits);
+          padding-right: var(--dl-space-space-twounits);
+        }
+      }
+    </style>
+    <style
+      data-href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    >
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyeMZs.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 200;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyfMZs.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuOKfMZs.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZs.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuI6fMZs.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYMZs.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZs.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyYMZs.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuBWYMZs.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 200;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 200;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 200;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 200;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 200;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 200;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 200;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
+    <style
+      data-href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    >
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiAyp8kv8JHgFVrJJLmE3tG.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 200;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmv1plEw.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm21llEw.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrJJLedA.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmg1hlEw.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmr19lEw.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmy15lEw.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm111lEw.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm81xlEw.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrLPTedA.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 200;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_V1g.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8V1g.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJM.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9V1g.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6V1g.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7V1g.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4V1g.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5V1g.woff)
+          format("woff");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiAyp8kv8JHgFVrJJLmE0tDMPKhSkFEkm8.woff2)
+          format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiAyp8kv8JHgFVrJJLmE0tMMPKhSkFEkm8.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiAyp8kv8JHgFVrJJLmE0tCMPKhSkFE.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 200;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmv1pVFteOYktMqlap.woff2)
+          format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 200;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmv1pVGdeOYktMqlap.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 200;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmv1pVF9eOYktMqg.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm21lVFteOYktMqlap.woff2)
+          format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm21lVGdeOYktMqlap.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm21lVF9eOYktMqg.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrJJLucXtAOvWDSHFF.woff2)
+          format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrJJLufntAOvWDSHFF.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrJJLucHtAOvWDSA.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmg1hVFteOYktMqlap.woff2)
+          format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmg1hVGdeOYktMqlap.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmg1hVF9eOYktMqg.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmr19VFteOYktMqlap.woff2)
+          format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmr19VGdeOYktMqlap.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmr19VF9eOYktMqg.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmy15VFteOYktMqlap.woff2)
+          format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmy15VGdeOYktMqlap.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmy15VF9eOYktMqg.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm111VFteOYktMqlap.woff2)
+          format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm111VGdeOYktMqlap.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm111VF9eOYktMqg.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm81xVFteOYktMqlap.woff2)
+          format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm81xVGdeOYktMqlap.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: italic;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm81xVF9eOYktMqg.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrLPTucXtAOvWDSHFF.woff2)
+          format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrLPTufntAOvWDSHFF.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrLPTucHtAOvWDSA.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 200;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z11lFd2JQEl8qw.woff2)
+          format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 200;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z1JlFd2JQEl8qw.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 200;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z1xlFd2JQEk.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z11lFd2JQEl8qw.woff2)
+          format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1JlFd2JQEl8qw.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlFd2JQEk.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecnFHGPezSQ.woff2)
+          format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecnFHGPezSQ.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z11lFd2JQEl8qw.woff2)
+          format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1JlFd2JQEl8qw.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z11lFd2JQEl8qw.woff2)
+          format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2)
+          format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z11lFd2JQEl8qw.woff2)
+          format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1JlFd2JQEl8qw.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1xlFd2JQEk.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z11lFd2JQEl8qw.woff2)
+          format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z1JlFd2JQEl8qw.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z1xlFd2JQEk.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="__next" data-reactroot="">
+      <div class="jsx-1af492b05e0c7c16 home-container">
+        <header
+          data-role="Header"
+          class="jsx-fee9217df28f3aa8 header-header bg-primary header-root-class-name"
+        >
+          <img
+            alt="logo"
+            src="logo.png"
+            width="50px"
+            height="50px"
+            class="jsx-fee9217df28f3aa8"
+          />
+          <div class="jsx-fee9217df28f3aa8 header-nav">
+            <a
+              href="https://lms.blockacademy.info/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="jsx-fee9217df28f3aa8 header-link"
+              ><nav
+                class="jsx-4c7cc500ded58631 navigation-links-nav navigation-links-root-class-name8"
+              >
+
+                <div class="jsx-4c7cc500ded58631 navigation-links-container">
+                  <a
+                    href="https://discord.gg/MfHcDMtRAd"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="jsx-4c7cc500ded58631 navigation-links-link"
+                    ><img
+                      alt="image"
+                      src="disc.png"
+                      class="jsx-4c7cc500ded58631 navigation-links-image" /></a
+                  >
+
+                </div></nav
+            ></a>
+          </div>
+
+          <div
+            data-role="MobileMenu"
+            class="jsx-fee9217df28f3aa8 header-mobile-menu"
+          >
+            <div class="jsx-fee9217df28f3aa8 header-nav1">
+              <div class="jsx-fee9217df28f3aa8 header-container">
+                <img alt="logo" src="logo.png" width ="50px" height = "50px" class="jsx-fee9217df28f3aa8" />
+                <div
+                  data-role="CloseMobileMenu"
+                  class="jsx-fee9217df28f3aa8 header-close-mobile-menu"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="jsx-fee9217df28f3aa8 header-icon2"
+                  >
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      class="jsx-fee9217df28f3aa8"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <nav
+                class="jsx-4c7cc500ded58631 navigation-links-nav navigation-links-root-class-name8"
+              >
+                <div class="jsx-4c7cc500ded58631 navigation-links-container">
+                  <a
+                    href="https://t.me/goozlemania"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="jsx-4c7cc500ded58631 navigation-links-link"
+                    ><img
+                      alt="image"
+                      src="disc.png"
+                      class="jsx-4c7cc500ded58631 navigation-links-image" />
+</a
+                  ><a
+                    href="https://vk.com/goozlemania"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="jsx-4c7cc500ded58631 navigation-links-link1"
+                    ><img
+                    alt="image"
+                    src="vk.png"
+                    class="jsx-4c7cc500ded58631 navigation-links-image" />
+</a
+                ></a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <div class="jsx-1af492b05e0c7c16 home-hero">
+          <div class="jsx-1af492b05e0c7c16 home-overlay"></div>
+          <div class="jsx-1af492b05e0c7c16 home-container01">
+            <h1 data-aos="fade" class="jsx-1af492b05e0c7c16 home-text header">
+              Добро пожаловать на сайт коллекции Goozlemania!
+            </h1>
+            <h2
+              data-aos="fade-up"
+              data-aos-delay="200"
+              class="jsx-1af492b05e0c7c16 home-sub sub-heading"
+            >
+              <span class="jsx-1af492b05e0c7c16"
+                >Taught by certified experts </span
+              ><br class="jsx-1af492b05e0c7c16" /><span
+                class="jsx-1af492b05e0c7c16"
+                ></span
+              ><br class="jsx-1af492b05e0c7c16" />
+            </h2>
+            <a href="https://vk.com/flpstar"
+              data-aos="zoom-in"
+              data-aos-delay="600"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="jsx-1af492b05e0c7c16 home-link btn-primary button"
+              ><span class="jsx-1af492b05e0c7c16"
+                ><span class="jsx-1af492b05e0c7c16">Купить NFT!</span
+                ><br class="jsx-1af492b05e0c7c16" /></span
+            ></a>
+          </div>
+        </div>
+        <div class="jsx-1af492b05e0c7c16 home-t-h-e-n-f-t">
+          <div class="jsx-1af492b05e0c7c16 container home-container02">
+            <div class="jsx-1af492b05e0c7c16 home-header">
+              <h1
+                data-aos="fade"
+                class="jsx-1af492b05e0c7c16 home-text08 header"
+              >
+                <span class="jsx-1af492b05e0c7c16">NFT</span
+                ><br class="jsx-1af492b05e0c7c16" />
+              </h1>
+              <h2
+                data-aos="fade"
+                data-aos-delay="600"
+                class="jsx-1af492b05e0c7c16 home-sub1 sub-heading"
+              >
+                <span class="jsx-1af492b05e0c7c16"
+                  >Our NFTs will feature some of the smartest PFPs on
+                  Solana!</span
+                ><br class="jsx-1af492b05e0c7c16" />
+              </h2>
+            </div>
+            <div class="jsx-1af492b05e0c7c16 home-images">
+              <div
+                data-aos="fade-right"
+                data-aos-delay="400"
+                class="jsx-1af492b05e0c7c16 home-c-o-l"
+              >
+                <div
+                  class="jsx-2850cd51fdf0e0bb card-image-card bg-secondary card-image-root-class-name"
+                >
+                  <div class="jsx-2850cd51fdf0e0bb card-image-i-m-g">
+                    <img
+                      alt="image"
+                      src="nft2.jpg"
+                      class="jsx-2850cd51fdf0e0bb card-image-image"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                data-aos="flip-up"
+                data-aos-delay="400"
+                class="jsx-1af492b05e0c7c16 home-c-o-l01"
+              >
+                <div
+                  class="jsx-2850cd51fdf0e0bb card-image-card bg-secondary card-image-root-class-name1"
+                >
+                  <div class="jsx-2850cd51fdf0e0bb card-image-i-m-g">
+                    <img
+                      alt="image"
+                      src="nft.jpg"
+                      class="jsx-2850cd51fdf0e0bb card-image-image"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                data-aos="flip-left"
+                data-aos-delay="400"
+                class="jsx-1af492b05e0c7c16 home-c-o-l02"
+              >
+                <div
+                  class="jsx-2850cd51fdf0e0bb card-image-card bg-secondary card-image-root-class-name2"
+                >
+                  <div class="jsx-2850cd51fdf0e0bb card-image-i-m-g">
+                    <img
+                      alt="image"
+                      src="nft3.jpg"
+                      class="jsx-2850cd51fdf0e0bb card-image-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-aos="fade"
+              data-style="box-gradient"
+              class="jsx-1af492b05e0c7c16 home-box bg-secondary"
+            >
+              <div class="jsx-1af492b05e0c7c16">
+                <h2
+                  data-aos="fade-up"
+                  class="jsx-1af492b05e0c7c16 home-text13 header"
+                >
+                  <span class="jsx-1af492b05e0c7c16"
+                    >Goozlemania<span
+                      class="jsx-1af492b05e0c7c16"
+                    >
+                    </span></span
+                  ><br class="jsx-1af492b05e0c7c16" /><span
+                    class="jsx-1af492b05e0c7c16"
+                    >дает вам право:</span
+                  >
+                </h2>
+                <div class="jsx-1af492b05e0c7c16 home-container04">
+                  <div
+                    data-aos="flip-up"
+                    data-aos-delay="400"
+                    class="jsx-1af492b05e0c7c16 home-c-o-l03"
+                  >
+                    <p
+                      class="jsx-1af492b05e0c7c16 home-text17 sub-heading f-16"
+                    >
+                    </p>
+                  </div>
+                  <div
+                    data-aos="flip-up"
+                    data-aos-delay="400"
+                    class="jsx-1af492b05e0c7c16 home-c-o-l04"
+                  >
+                    <p
+                      class="jsx-1af492b05e0c7c16 home-text18 sub-heading f-16"
+                    >
+                      $LEARN earning potential as you progress through our
+                      specially designed courses.
+                    </p>
+                  </div>
+                  <div
+                    data-aos="flip-up"
+                    data-aos-delay="400"
+                    class="jsx-1af492b05e0c7c16 home-c-o-l05"
+                  >
+                    <p
+                      class="jsx-1af492b05e0c7c16 home-text19 sub-heading f-16"
+                    >
+                      Exclusive rewards at the campus store, redeemed using your
+                      hard earned $LEARN token.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jsx-1af492b05e0c7c16 home-graduates">
+          <div class="jsx-1af492b05e0c7c16 container home-container05">
+            <div class="jsx-1af492b05e0c7c16 home-header1">
+              <h1
+                data-aos="fade"
+                class="jsx-1af492b05e0c7c16 home-text20 header"
+              >
+                Как Купить Наши NFT?
+              </h1>
+            </div>
+            <div class="jsx-1af492b05e0c7c16 home-c-o-l06">
+              <div
+                data-aos="fade-right"
+                data-aos-delay="400"
+                class="jsx-1af492b05e0c7c16 home-b-o-x1 bg-secondary box"
+              >
+                <p class="jsx-1af492b05e0c7c16 home-text21 sub-heading f-16">
+                  <span class="jsx-1af492b05e0c7c16 home-text22"
+                    ></span
+                  ><br class="jsx-1af492b05e0c7c16" /><span
+                    class="jsx-1af492b05e0c7c16"
+                    >Наши NFT можно купить на официальном маркетплейсе Magic Eden.</span
+                  ><br class="jsx-1af492b05e0c7c16" /><span
+                    class="jsx-1af492b05e0c7c16"
+                    ></span
+                  ><br class="jsx-1af492b05e0c7c16" /><br
+                    class="jsx-1af492b05e0c7c16"
+                  /><span class="jsx-1af492b05e0c7c16 home-text29"
+                    ></span
+                  ><br class="jsx-1af492b05e0c7c16" /><span
+                    class="jsx-1af492b05e0c7c16"
+                    ></span
+                  ><br class="jsx-1af492b05e0c7c16" />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jsx-1af492b05e0c7c16 home-roadmap">
+          <div class="jsx-1af492b05e0c7c16 container home-container06">
+            <div class="jsx-1af492b05e0c7c16 home-header2">
+              <h1
+                data-aos="fade"
+                class="jsx-1af492b05e0c7c16 home-text36 header"
+              >
+              </h1>
+              <h2
+                data-aos="fade-up"
+                data-aos-delay="400"
+                class="jsx-1af492b05e0c7c16 home-sub2 sub-heading"
+              >
+                <span class="jsx-1af492b05e0c7c16"
+                  >Listen carefully class, here&#x27;s everything you need
+                  to<span class="jsx-1af492b05e0c7c16"> </span></span
+                ><br class="jsx-1af492b05e0c7c16" /><span
+                  class="jsx-1af492b05e0c7c16"
+                  >know about where we&#x27;re ALL going!</span
+                ><br class="jsx-1af492b05e0c7c16" />
+              </h2>
+            </div>
+            <div
+              data-aos="zoom-out"
+              data-aos-delay="600"
+              class="jsx-1af492b05e0c7c16 home-b-o-x3"
+            >
+              <div class="jsx-1af492b05e0c7c16 home-image2 box">
+                <img
+                  alt="image"
+                  src="/playground_assets/roadmap-1400w.png"
+                  data-aos="zoom-out"
+                  data-aos-delay="600"
+                  class="jsx-1af492b05e0c7c16 home-image3"
+                />
+              </div>
+            </div>
+            <div class="jsx-1af492b05e0c7c16">
+              <h1
+                data-aos="fade"
+                class="jsx-1af492b05e0c7c16 home-text41 header"
+              >
+                Наш Discord сервер!
+              </h1>
+              <h2
+                data-aos="fade-up"
+                data-aos-delay="400"
+                class="jsx-1af492b05e0c7c16 home-sub3 sub-heading"
+              >
+              Это место, где наши участники могут встретиться, общаться и поделиться своей страстью к нашей коллекции NFT. На сервере вы найдете разнообразные каналы для обсуждения тем, связанных с искусством, дизайном и природой, а также специальные каналы для получения эксклюзивной информации о наших последних обновлениях и акциях. Присоединяйтесь к нашему серверу, чтобы стать частью нашего вдохновляющего сообщества и обменяться идеями с единомышленниками!
+              </h2>
+              <a
+                href="https://discord.gg/MfHcDMtRAd"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="jsx-1af492b05e0c7c16"
+                ><img
+                  alt="image"
+                  src="/playground_assets/discord%20button-1400w.png"
+                  data-aos="flip-up"
+                  data-aos-delay="600"
+                  class="jsx-1af492b05e0c7c16 home-image4"
+              /></a>
+              <div id="discord-btn" class="jsx-1af492b05e0c7c16">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="jsx-1af492b05e0c7c16"
+                  ><div class="jsx-1af492b05e0c7c16 home-container09">
+                    <img
+                      alt="image"
+                      src="discord.png"
+                      class="jsx-1af492b05e0c7c16 home-image5"
+                    />
+                    <div class="jsx-1af492b05e0c7c16 home-div">
+                      <div style="display: contents"></div>
+                    </div></div
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jsx-1af492b05e0c7c16 home-faculty">
+          <div class="jsx-1af492b05e0c7c16 container home-container10">
+            <div data-aos="fade" class="jsx-1af492b05e0c7c16 home-header3">
+              <h1 class="jsx-1af492b05e0c7c16 home-text42 header">Разработчики</h1>
+            </div>
+            <div class="jsx-1af492b05e0c7c16 home-images1">
+              <div
+                data-aos="fade-right"
+                data-aos-delay="400"
+                class="jsx-1af492b05e0c7c16 home-c-o-l07"
+              >
+                <a
+                  href="https://t.me/flpstar"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="jsx-1af492b05e0c7c16 home-link3"
+                  ><div
+                    class="jsx-b592e430067c6df5 card-card bg-secondary card-root-class-name3"
+                  >
+                    <div class="jsx-b592e430067c6df5 card-i-m-g">
+                      <img
+                        alt="image"
+                        src="Мальчик.png"
+                        class="jsx-b592e430067c6df5 card-image"
+                      />
+                      <div class="jsx-b592e430067c6df5 card-container">
+                        <span class="jsx-b592e430067c6df5 card-text"
+                          >1Flipstar1</span
+                        ><svg
+                          viewBox="0 0 950.8571428571428 1024"
+                          class="jsx-b592e430067c6df5 card-icon"
+                        >
+                          <path
+                            d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                            class="jsx-b592e430067c6df5"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div></div
+                ></a>
+              </div>
+              <div data-aos="flip-up" class="jsx-1af492b05e0c7c16 home-c-o-l08">
+                <a
+                  href="https://t.me/Amrikhudo1"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="jsx-1af492b05e0c7c16 home-link4"
+                  ><div
+                    class="jsx-b592e430067c6df5 card-card bg-secondary card-root-class-name4"
+                  >
+                    <div class="jsx-b592e430067c6df5 card-i-m-g">
+                      <img
+                        alt="image"
+                        src="Мальчик2.png"
+                        class="jsx-b592e430067c6df5 card-image"
+                      />
+                      <div class="jsx-b592e430067c6df5 card-container">
+                        <span class="jsx-b592e430067c6df5 card-text"
+                          >Amrikhudo</span
+                        ><svg
+                          viewBox="0 0 950.8571428571428 1024"
+                          class="jsx-b592e430067c6df5 card-icon"
+                        >
+                          <path
+                            d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                            class="jsx-b592e430067c6df5"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div></div
+                ></a>
+              </div>
+              <div
+                data-aos="fade-right"
+                data-aos-delay="400"
+                class="jsx-1af492b05e0c7c16 home-c-o-l09"
+              >
+                <a
+                  href="https://t.me/flow_twink"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="jsx-1af492b05e0c7c16 home-link5"
+                >
+                  <div
+                    class="jsx-b592e430067c6df5 card-card bg-secondary card-root-class-name5"
+                  >
+                    <div class="jsx-b592e430067c6df5 card-i-m-g">
+                      <img
+                        alt="image"
+                        src="Мальчик3.png"
+                        class="jsx-b592e430067c6df5 card-image"
+                      />
+                      <div class="jsx-b592e430067c6df5 card-container">
+                        <span class="jsx-b592e430067c6df5 card-text"
+                          >Flooow</span
+                        >
+                      </div>
+                    </div></div
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jsx-1af492b05e0c7c16 home-f-a-qs">
+          <div class="jsx-1af492b05e0c7c16 container home-container11">
+            <div class="jsx-1af492b05e0c7c16 home-header4">
+              <h1
+                data-aos="fade"
+                class="jsx-1af492b05e0c7c16 home-text43 header"
+              >
+                <span class="jsx-1af492b05e0c7c16">Часто Задаваемые Вопросы:</span
+                ><br class="jsx-1af492b05e0c7c16" />
+              </h1>
+            </div>
+            <div
+              data-aos="fade"
+              data-style="box-gradient"
+              class="jsx-1af492b05e0c7c16 home-box4 bg-secondary"
+            >
+              <div
+                data-aos="fade-right"
+                data-object="faq"
+                data-status="show"
+                class="jsx-1af492b05e0c7c16 home-f-a-q-1 active"
+              >
+                <h3 class="jsx-1af492b05e0c7c16 home-text46 header">
+                  Что Такое Блок NFT?
+                </h3>
+                <h2
+                  data-aos="fade-up"
+                  data-faq="content"
+                  data-aos-delay="600"
+                  class="jsx-1af492b05e0c7c16 home-content sub-heading f-16"
+                >
+                  <span class="jsx-1af492b05e0c7c16"
+                    >NFT (невзаимозаменяемый токен) - это уникальный цифровой актив, который представляет собой уникальный
+                     код на блокчейне и обычно используется для представления цифровых произведений и документов.<span class="jsx-1af492b05e0c7c16"> </span></span
+                  ><br class="jsx-1af492b05e0c7c16" />
+                </h2>
+              </div>
+              <div
+                data-aos="fade-right"
+                data-object="faq"
+                data-status="hide"
+                data-aos-delay="200"
+                class="jsx-1af492b05e0c7c16 home-f-a-q-2"
+              >
+                <h3 class="jsx-1af492b05e0c7c16 home-text49 header">
+                </h3>
+                <h2
+                  data-faq="content"
+                  class="jsx-1af492b05e0c7c16 home-content1 sub-heading f-16"
+                >
+                  <span class="jsx-1af492b05e0c7c16"
+                    ><span
+                      class="jsx-1af492b05e0c7c16"
+                    >
+                    </span></span
+                  ><br class="jsx-1af492b05e0c7c16" /><span
+                    class="jsx-1af492b05e0c7c16"
+                    ><span class="jsx-1af492b05e0c7c16"> </span></span
+                  ><br class="jsx-1af492b05e0c7c16" />
+                </h2>
+              </div>
+              <div
+                data-aos="fade-right"
+                data-object="faq"
+                data-aos-delay="200"
+                class="jsx-1af492b05e0c7c16 home-f-a-q-3"
+              >
+                <h3 class="jsx-1af492b05e0c7c16 home-text54 header">
+                  <span class="jsx-1af492b05e0c7c16"
+                    ></span
+                  ><br class="jsx-1af492b05e0c7c16" />
+                </h3>
+                <h2
+                  data-faq="content"
+                  class="jsx-1af492b05e0c7c16 home-content2 sub-heading f-16"
+                >
+                  <span class="jsx-1af492b05e0c7c16"
+                    ></span
+                  ><br class="jsx-1af492b05e0c7c16" /><span
+                    class="jsx-1af492b05e0c7c16"
+                    ></span
+                  ><br class="jsx-1af492b05e0c7c16" /><span
+                    class="jsx-1af492b05e0c7c16"
+                    ></span
+                  >
+                </h2>
+              </div>
+              <div
+                data-aos="fade-right"
+                data-object="faq"
+                data-status="hide"
+                data-aos-delay="200"
+                class="jsx-1af492b05e0c7c16 home-f-a-q-4"
+              >
+                <h3 class="jsx-1af492b05e0c7c16 home-text62 header">
+                  <span class="jsx-1af492b05e0c7c16">What is the utility?</span
+                  ><br class="jsx-1af492b05e0c7c16" />
+                </h3>
+                <h2
+                  data-faq="content"
+                  class="jsx-1af492b05e0c7c16 home-content3 sub-heading f-16"
+                >
+                  <span class="jsx-1af492b05e0c7c16"
+                    ><span
+                      class="jsx-1af492b05e0c7c16"
+                    >
+                    </span></span
+                  ><br class="jsx-1af492b05e0c7c16" />
+                </h2>
+              </div>
+              <div
+                data-aos="fade-right"
+                data-object="faq"
+                data-status="hide"
+                data-aos-delay="200"
+                class="jsx-1af492b05e0c7c16 home-f-a-q-5"
+              >
+                <h3 class="jsx-1af492b05e0c7c16 home-text67 header">
+                </h3>
+                <h2
+                  data-faq="content"
+                  class="jsx-1af492b05e0c7c16 home-content4 sub-heading f-16"
+                >
+                  <span class="jsx-1af492b05e0c7c16"
+                    ></span
+                  ><br class="jsx-1af492b05e0c7c16" />
+                </h2>
+              </div>
+              <div
+                data-aos="fade-right"
+                data-object="faq"
+                data-aos-delay="200"
+                class="jsx-1af492b05e0c7c16 home-f-a-q-6"
+              >
+                <h3 class="jsx-1af492b05e0c7c16 home-text70 header">
+                  <span class="jsx-1af492b05e0c7c16"
+                    ></span
+                  ><br class="jsx-1af492b05e0c7c16" />
+                </h3>
+                <h2
+                  data-faq="content"
+                  class="jsx-1af492b05e0c7c16 home-content5 sub-heading f-16"
+                >
+                  <span class="jsx-1af492b05e0c7c16"
+                    ></span
+                  ><br class="jsx-1af492b05e0c7c16" /><span
+                    class="jsx-1af492b05e0c7c16"
+                    ><span class="jsx-1af492b05e0c7c16"> </span></span
+                  ><br class="jsx-1af492b05e0c7c16" /><span
+                    class="jsx-1af492b05e0c7c16"
+                    ><span
+                      class="jsx-1af492b05e0c7c16"
+                    >
+                    </span
+                  ></span>
+                </h2>
+              </div>
+              <div
+                data-aos="fade-right"
+                data-object="faq"
+                data-status="hide"
+                data-aos-delay="200"
+                class="jsx-1af492b05e0c7c16 home-f-a-q-7"
+              >
+                <h3 class="jsx-1af492b05e0c7c16 home-text78 header">
+                  <span class="jsx-1af492b05e0c7c16"
+                    ><span
+                      class="jsx-1af492b05e0c7c16"
+                    >
+                    </span></span
+                  ><br class="jsx-1af492b05e0c7c16" />
+                </h3>
+                <h2
+                  data-faq="content"
+                  class="jsx-1af492b05e0c7c16 home-content6 sub-heading f-16"
+                >
+                  <span class="jsx-1af492b05e0c7c16"
+                    ></span
+                  ><br class="jsx-1af492b05e0c7c16" /><span
+                    class="jsx-1af492b05e0c7c16"
+                    ><span class="jsx-1af492b05e0c7c16"> </span></span
+                  ><br class="jsx-1af492b05e0c7c16" /><span
+                    class="jsx-1af492b05e0c7c16"
+                    ></span
+                  ><br class="jsx-1af492b05e0c7c16" />
+                </h2>
+              </div>
+              <div
+                data-aos="fade-right"
+                data-object="faq"
+                data-status="hide"
+                data-aos-delay="200"
+                class="jsx-1af492b05e0c7c16 home-f-a-q-71"
+              >
+                <h3 class="jsx-1af492b05e0c7c16 home-text87 header">
+                  <span class="jsx-1af492b05e0c7c16"
+                    ></span
+                  ><br class="jsx-1af492b05e0c7c16" />
+                </h3>
+                <h2
+                  data-faq="content"
+                  class="jsx-1af492b05e0c7c16 home-content7 sub-heading f-16"
+                >
+                  <span class="jsx-1af492b05e0c7c16"
+                    ></span
+                  ><br class="jsx-1af492b05e0c7c16" />
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="modal-form" class="jsx-1af492b05e0c7c16 home-forms">
+          <div class="jsx-1af492b05e0c7c16 home-container12 container">
+            <div
+              data-aos="fade"
+              data-style="box-gradient"
+              class="jsx-1af492b05e0c7c16 home-box5"
+            >
+              <div class="jsx-1af492b05e0c7c16">
+                <h2
+                  data-aos="fade-up"
+                  class="jsx-1af492b05e0c7c16 home-text92 header"
+                >
+                </h2>
+                <svg
+                  id="modal-close"
+                  viewBox="0 0 1024 1024"
+                  class="jsx-1af492b05e0c7c16 home-icon"
+                >
+                  <path
+                    d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    class="jsx-1af492b05e0c7c16"
+                  ></path>
+                </svg>
+                <div class="jsx-1af492b05e0c7c16 home-forms1">
+                  <form
+                    action="https://formsubmit.co/bluewhalehunting@gmail.com"
+                    method="POST"
+                    enctype="application/x-www-form-urlencoded"
+                    class="jsx-1af492b05e0c7c16 home-form"
+                  >
+                    <input
+                      type="text"
+                      name="name"
+                      required=""
+                      placeholder="Name*"
+                      class="jsx-1af492b05e0c7c16 home-textinput input forms"
+                    /><input
+                      type="email"
+                      name="Email Address"
+                      required=""
+                      placeholder="Email*"
+                      class="jsx-1af492b05e0c7c16 home-textinput1 input forms"
+                    /><input
+                      type="text"
+                      name="Portfolio"
+                      required=""
+                      placeholder="Content Portfolio*"
+                      class="jsx-1af492b05e0c7c16 home-textinput2 input forms"
+                    /><textarea
+                      name="Why do you want to be a tutor?"
+                      placeholder="Why do you want to be a tutor?"
+                      class="jsx-1af492b05e0c7c16 home-textarea textarea forms"
+                    ></textarea
+                    ><button
+                      id="btnBlockAcademyTutor"
+                      type="submit"
+                      data-aos="fade-up"
+                      data-aos-delay="600"
+                      class="jsx-1af492b05e0c7c16 home-button1 btn-primary button"
+                    >
+                      <span class="jsx-1af492b05e0c7c16"
+                        ><span class="jsx-1af492b05e0c7c16"></span
+                        ><br class="jsx-1af492b05e0c7c16"
+                      /></span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="jsx-f9e3a1a5542a56c footer-footer">
+          <img
+            alt="logo"
+            src="logo.png"
+            width="50px"
+            height="50px"
+            class="jsx-f9e3a1a5542a56c footer-image"
+          /><a
+            href="https://vk.com/bugdiev"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="jsx-f9e3a1a5542a56c footer-link"
+            ><p class="jsx-f9e3a1a5542a56c footer-text">
+              <span class="jsx-f9e3a1a5542a56c"
+                >Сайт был разработан<span class="jsx-f9e3a1a5542a56c">
+                </span></span
+              ><span class="jsx-f9e3a1a5542a56c footer-text2">Амрихудо</span
+              ><br class="jsx-f9e3a1a5542a56c" /></p
+          ></a>
+          <div class="jsx-f9e3a1a5542a56c footer-icon-group">
+            <span class="jsx-f9e3a1a5542a56c footer-text4"
+              ></span
+            >
+            <div class="jsx-f9e3a1a5542a56c footer-container">
+              <a
+                href="https://t.me/goozlemania"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="jsx-f9e3a1a5542a56c footer-link1"
+                ><img
+                  alt="image"
+                  src="disc.png"
+                  class="jsx-f9e3a1a5542a56c footer-image1" /></a
+              ><a
+              href="https://vk.com/goozlemania"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="jsx-f9e3a1a5542a56c footer-link1"
+              ><img
+                alt="image"
+                src="vk.png"
+                class="jsx-f9e3a1a5542a56c footer-image1" /></a
+            >
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "props": { "pageProps": {} },
+        "page": "/",
+        "query": {},
+        "buildId": "_q0Woo10ZwrMcX8sETMJc",
+        "nextExport": true,
+        "autoExport": true,
+        "isFallback": false,
+        "scriptLoader": []
+      }
+    </script>
+    <div>
+      <script>
+        // Get the modal
+        var modal = document.getElementById("modal-form");
+        // Get the button that opens the modal
+        var btnOpen = document.getElementById("btnBlockAcademyTutor");
+        // Get the <span> element that closes the modal
+        var btnClose = document.getElementById("modal-close");
+        // When the user clicks on the button, open the modal
+        btnOpen.onclick = function () {
+          modal.style.display = "block";
+        };
+        btnClose.onclick = function () {
+          modal.style.display = "none";
+        };
+      </script>
+      <script
+        data-section-id="header"
+        src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+      ></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init({ duration: 1000 });
+        const accordion = document.querySelectorAll('[data-object="faq"]');
+        for (i = 0; i < accordion.length; i++) {
+          accordion[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+          });
+        }
+      </script>
+    </div>
+  </body>
+</html>
