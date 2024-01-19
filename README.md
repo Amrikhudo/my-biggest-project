@@ -1,3 +1,7 @@
+![Статус проекта](https://img.shields.io/badge/Статус-В разработке-yellow)
+![Версия](https://img.shields.io/badge/Версия-1.0.0-blue)
+
+
 <h1>NFT Marketplace Project</h1>
 
 ## О проекте
