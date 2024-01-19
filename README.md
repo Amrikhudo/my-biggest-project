@@ -3,7 +3,6 @@
 ![Build Status](https://travis-ci.org/xdan/jodit.svg?branch=master)
 ![Проблемы](https://img.shields.io/github/issues/Amrikhudo/my-biggest-project)
 ![Покрытие кода](https://img.shields.io/badge/Покрытие%20кода-90%25-brightgreen)
-![Язык программирования](https://img.shields.io/github/languages/top/Amrikhudo/my-biggest-project)
 ![Форки](https://img.shields.io/github/forks/Amrikhudo/my-biggest-project?style=social)
 ![Звезды](https://img.shields.io/github/stars/Amrikhudo/my-biggest-project?style=social)
 
