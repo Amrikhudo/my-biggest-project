@@ -1,4 +1,5 @@
 ![Версия](https://img.shields.io/badge/Версия-1.0.0-blue)
+![Build Status](https://travis-ci.org/xdan/jodit.svg?branch=master)](https://travis-ci.org/xdan/jodit)
 
 
 <h1>NFT Marketplace Project</h1>
