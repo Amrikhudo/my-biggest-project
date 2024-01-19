@@ -1,6 +1,5 @@
 ![Версия](https://img.shields.io/badge/Версия-1.0.0-blue)
 ![Статус проекта](https://img.shields.io/badge/Статус-В%20разработке-yellow)
-![Build Status](https://travis-ci.org/Amrikhudo/my-biggest.svg?branch=master)
 ![Проблемы](https://img.shields.io/github/issues/Amrikhudo/my-biggest-project)
 ![Покрытие кода](https://img.shields.io/badge/Покрытие%20кода-90%25-brightgreen)
 ![Форки](https://img.shields.io/github/forks/Amrikhudo/my-biggest-project?style=social)
