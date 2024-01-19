@@ -4,6 +4,8 @@
 ![Проблемы](https://img.shields.io/github/issues/Amrikhudo/my-biggest-project)
 ![Покрытие кода](https://img.shields.io/badge/Покрытие%20кода-90%25-brightgreen)
 ![Язык программирования](https://img.shields.io/github/languages/top/Amrikhudo/my-biggest-project)
+![Форки](https://img.shields.io/github/forks/ваш_проект/ваш_репозиторий?style=social)
+
 
 
 
