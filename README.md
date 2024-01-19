@@ -2,6 +2,8 @@
 ![Статус проекта](https://img.shields.io/badge/Статус-В%20разработке-yellow)
 ![Build Status](https://travis-ci.org/xdan/jodit.svg?branch=master)
 ![Проблемы](https://img.shields.io/github/issues/ваш_проект/ваш_репозиторий)
+![Покрытие кода](https://img.shields.io/badge/Покрытие%20кода-90%25-brightgreen)
+
 
 
 
